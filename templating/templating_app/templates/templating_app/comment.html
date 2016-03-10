@@ -1,0 +1,10 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Comment{% endblock %}
+
+{% block content %}
+<p>You can't see what I wrote under this because I commented it out :p</p>
+{% comment %}
+<p>Ed smells.</p>
+{% endcomment %}
+{% endblock %}
