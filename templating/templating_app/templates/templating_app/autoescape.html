@@ -1,0 +1,12 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Autoescape{% endblock %}
+
+{% block content %}
+{% autoescape on %}
+{{ autoescape_ex }}
+{% endautoescape %}
+{% autoescape off %}
+{{ autoescape_off_ex }}
+{% endautoescape %}
+{% endblock %}
