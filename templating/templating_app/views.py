@@ -13,3 +13,7 @@ def autoescape(request):
 
 def comment(request):
     return render(request, 'templating_app/comment.html')
+
+
+def csrf_token(request):
+    return render(request, 'templating_app/csrf_token.html')
