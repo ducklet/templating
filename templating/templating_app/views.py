@@ -50,3 +50,7 @@ def for_tag(request):
 def for_empty(request):
     example2_list = []
     return render(request, 'templating_app/for_empty.html', {"example2_list": example2_list})
+
+
+def if_tag(request):
+    return render(request, 'templating_app/if.html')
