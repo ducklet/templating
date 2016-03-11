@@ -45,3 +45,8 @@ def firstof(request):
 def for_tag(request):
     example_list = ['This', 'is', 'an', 'ol', 'generated', 'by', 'a', 'for', 'loop', 'and', 'an', 'iterable', 'list']
     return render(request, 'templating_app/for.html', {"example_list": example_list})
+
+
+def for_empty(request):
+    example2_list = []
+    return render(request, 'templating_app/for_empty.html', {"example2_list": example2_list})
