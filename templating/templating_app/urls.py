@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^debug/$', views.debug, name='debug'),
     url(r'^extends/$', views.extends, name='extends'),
     url(r'^filter/$', views.filter, name='filter'),
+    url(r'^firstof/$', views.firstof, name='firstof'),
 ]
