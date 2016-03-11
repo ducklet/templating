@@ -22,3 +22,8 @@ def csrf_token(request):
 
 def cycle(request):
     return render(request, 'templating_app/cycle.html')
+
+
+def debug(request):
+    dict(alissa=1, eddie=2)
+    return render(request, 'templating_app/debug.html', {"dict": dict})

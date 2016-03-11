@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^comment/$', views.comment, name='comment'),
     url(r'^csrf_token/$', views.csrf_token, name='csrf_token'),
     url(r'^cycle/$', views.cycle, name='cycle'),
+    url(r'^debug/$', views.debug, name='debug'),
 ]
