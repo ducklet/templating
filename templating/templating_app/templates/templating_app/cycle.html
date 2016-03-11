@@ -1,0 +1,12 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Cycle{% endblock %}
+
+{% block content %}
+<ul>
+    <li class="{% cycle 'large' 'small' as sizes %}">I am large because of the cycle tag!</li>
+    <li class="{% cycle sizes %}">I am small because of the cycle tag!</li>
+    <li class="{% cycle sizes %}">I am large because of the cycle tag!</li>
+    <li class="{% cycle sizes %}">I am small because of the cycle tag!</li>
+</ul>
+{% endblock %}
