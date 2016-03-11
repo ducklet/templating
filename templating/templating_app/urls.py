@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^cycle/$', views.cycle, name='cycle'),
     url(r'^debug/$', views.debug, name='debug'),
     url(r'^extends/$', views.extends, name='extends'),
+    url(r'^filter/$', views.filter, name='filter'),
 ]

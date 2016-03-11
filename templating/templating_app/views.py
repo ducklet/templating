@@ -31,3 +31,7 @@ def debug(request):
 
 def extends(request):
     return render(request, 'templating_app/extends.html')
+
+
+def filter(request):
+    return render(request, 'templating_app/filter.html')
