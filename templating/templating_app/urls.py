@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^csrf_token/$', views.csrf_token, name='csrf_token'),
     url(r'^cycle/$', views.cycle, name='cycle'),
     url(r'^debug/$', views.debug, name='debug'),
+    url(r'^extends/$', views.extends, name='extends'),
 ]

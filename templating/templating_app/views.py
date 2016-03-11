@@ -27,3 +27,7 @@ def cycle(request):
 def debug(request):
     dict(alissa=1, eddie=2)
     return render(request, 'templating_app/debug.html', {"dict": dict})
+
+
+def extends(request):
+    return render(request, 'templating_app/extends.html')
