@@ -40,3 +40,8 @@ def filter(request):
 def firstof(request):
     the_other_thing = "The firstof tag is outputting this text, the value of the first non-empty variable I gave it."
     return render(request, 'templating_app/firstof.html', {"the_other_thing": the_other_thing})
+
+
+def for_tag(request):
+    example_list = ['This', 'is', 'an', 'ol', 'generated', 'by', 'a', 'for', 'loop', 'and', 'an', 'iterable', 'list']
+    return render(request, 'templating_app/for.html', {"example_list": example_list})

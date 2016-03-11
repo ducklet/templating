@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^extends/$', views.extends, name='extends'),
     url(r'^filter/$', views.filter, name='filter'),
     url(r'^firstof/$', views.firstof, name='firstof'),
+    url(r'^for/$', views.for_tag, name='for_tag'),
 ]
