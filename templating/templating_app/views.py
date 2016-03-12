@@ -22,3 +22,35 @@ def csrf_token(request):
 
 def cycle(request):
     return render(request, 'templating_app/cycle.html')
+
+
+def debug(request):
+    dict(alissa=1, eddie=2)
+    return render(request, 'templating_app/debug.html', {"dict": dict})
+
+
+def extends(request):
+    return render(request, 'templating_app/extends.html')
+
+
+def filter(request):
+    return render(request, 'templating_app/filter.html')
+
+
+def firstof(request):
+    the_other_thing = "The firstof tag is outputting this text, the value of the first non-empty variable I gave it."
+    return render(request, 'templating_app/firstof.html', {"the_other_thing": the_other_thing})
+
+
+def for_tag(request):
+    example_list = ['This', 'is', 'an', 'ol', 'generated', 'by', 'a', 'for', 'loop', 'and', 'an', 'iterable', 'list']
+    return render(request, 'templating_app/for.html', {"example_list": example_list})
+
+
+def for_empty(request):
+    example2_list = []
+    return render(request, 'templating_app/for_empty.html', {"example2_list": example2_list})
+
+
+def if_tag(request):
+    return render(request, 'templating_app/if.html')

@@ -8,4 +8,11 @@ urlpatterns = [
     url(r'^comment/$', views.comment, name='comment'),
     url(r'^csrf_token/$', views.csrf_token, name='csrf_token'),
     url(r'^cycle/$', views.cycle, name='cycle'),
+    url(r'^debug/$', views.debug, name='debug'),
+    url(r'^extends/$', views.extends, name='extends'),
+    url(r'^filter/$', views.filter, name='filter'),
+    url(r'^firstof/$', views.firstof, name='firstof'),
+    url(r'^for/$', views.for_tag, name='for_tag'),
+    url(r'^for_empty/$', views.for_empty, name='for_empty'),
+    url(r'^if/$', views.if_tag, name='if_tag'),
 ]
