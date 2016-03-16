@@ -64,3 +64,7 @@ def ifchanged(request):
 
 def include(request):
     return render(request, 'templating_app/include.html')
+
+
+def load(request):
+    return render(request, 'templating_app/load.html')
