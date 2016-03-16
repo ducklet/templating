@@ -53,4 +53,22 @@ def for_empty(request):
 
 
 def if_tag(request):
-    return render(request, 'templating_app/if.html')
+    pet_list = ['Shadow', 'Maxwell', 'Natasha', 'Ginger', 'Carla']
+    return render(request, 'templating_app/if.html', {"pet_list": pet_list})
+
+
+def ifchanged(request):
+    pet_list = ['Shadow', 'Shadow', 'Maxwell', 'Natasha', 'Ginger', 'Carla']
+    return render(request, 'templating_app/ifchanged.html', {"pet_list": pet_list})
+
+
+def include(request):
+    return render(request, 'templating_app/include.html')
+
+
+def load(request):
+    return render(request, 'templating_app/load.html')
+
+
+def lorem(request):
+    return render(request, 'templating_app/lorem.html')

@@ -3,9 +3,9 @@
 {% block title %}For{% endblock %}
 
 {% block content %}
-<ol>
-{% for example in example_list %}
-    <li>{{ example }}</li>
-{% endfor %}
-</ol>
+    <ol>
+        {% for example in example_list %}
+            <li>{{ example }}</li>
+        {% endfor %}
+    </ol>
 {% endblock %}

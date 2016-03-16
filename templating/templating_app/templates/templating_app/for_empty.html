@@ -3,11 +3,11 @@
 {% block title %}For ... empty{% endblock %}
 
 {% block content %}
-<ol>
-{% for example2 in example2_list %}
-    <li>{{ example2 }}</li>
-{% empty %}
-    <li>This is using the "for ... empty" tag to let you know that the "example2" list is empty.</li>
-{% endfor %}
-</ol>
+    <ol>
+        {% for example2 in example2_list %}
+            <li>{{ example2 }}</li>
+        {% empty %}
+            <li>This is using the "for ... empty" tag to let you know that the "example2" list is empty.</li>
+        {% endfor %}
+    </ol>
 {% endblock %}
