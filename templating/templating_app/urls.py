@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^for/$', views.for_tag, name='for_tag'),
     url(r'^for_empty/$', views.for_empty, name='for_empty'),
     url(r'^if/$', views.if_tag, name='if_tag'),
+    url(r'^ifchanged/$', views.ifchanged, name='ifchanged'),
 ]

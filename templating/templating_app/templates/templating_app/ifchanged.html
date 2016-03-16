@@ -1,0 +1,12 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Ifchanged{% endblock %}
+
+{% block content %}
+<h1>This is an example page for the ifchanged tag.  pet_list contains the value 'Shadow' twice, but it will
+    only be shown below once.</h1>
+
+{% for pet in pet_list %}
+    {% ifchanged %}{{ pet }}{% endifchanged %}
+{% endfor %}
+{% endblock %}
