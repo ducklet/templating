@@ -3,5 +3,12 @@
 {% block title %}If{% endblock %}
 
 {% block content %}
-{% if %}
+{% if pet_list %}
+    Irving pets:
+    {% for pet in pet_list %}
+        {{ pet }}
+    {% endfor %}
+{% else %}
+    The pet_list variable is empty.
+{% endif %}
 {% endblock %}

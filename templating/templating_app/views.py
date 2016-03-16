@@ -53,4 +53,5 @@ def for_empty(request):
 
 
 def if_tag(request):
-    return render(request, 'templating_app/if.html')
+    pet_list = ['Shadow', 'Maxwell', 'Natasha', 'Ginger', 'Carla']
+    return render(request, 'templating_app/if.html', {"pet_list": pet_list})
