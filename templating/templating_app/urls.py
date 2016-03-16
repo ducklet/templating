@@ -18,4 +18,5 @@ urlpatterns = [
     url(r'^ifchanged/$', views.ifchanged, name='ifchanged'),
     url(r'^include/$', views.include, name='include'),
     url(r'^load/$', views.load, name='load'),
+    url(r'^lorem/$', views.lorem, name='lorem'),
 ]

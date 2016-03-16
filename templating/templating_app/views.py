@@ -68,3 +68,7 @@ def include(request):
 
 def load(request):
     return render(request, 'templating_app/load.html')
+
+
+def lorem(request):
+    return render(request, 'templating_app/lorem.html')

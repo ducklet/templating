@@ -1,0 +1,9 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Lorem{% endblock %}
+
+{% block content %}
+<h1>This is an example usage of the lorem tag.  Below are 3 paragraphs, and the random argument is used to generate
+    unique text.</h1>
+{% lorem 3 p random %}
+{% endblock %}
