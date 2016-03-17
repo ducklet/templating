@@ -5,13 +5,14 @@
 {% block content %}
   {% regroup musicians by instrument as instrument_list %}
     <ul>
-      {for instrument in instrument_list %}
-        <li>{{ instrument.grouper }}</li>
+      {% for instrument in instrument_list %}
+        <li>{{ instrument.grouper }}
           <ul>
             {% for item in instrument.list %}
               <li>{{ item.name }}: {{ item.band }}</li>
             {% endfor %}
           </ul>
+        </li>
       {% endfor %}
     </ul>
 {% endblock %}
