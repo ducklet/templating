@@ -1,0 +1,11 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Spaceless{% endblock %}
+
+{% block content %}
+  {% spaceless %}
+    <h1>This uses the spaceless template tag.</h1>
+    <h2>Each element is on its own line...</h2>
+    <h3>but spaceless returns the HTML without spaces between the tags.</h3>
+  {% endspaceless %}
+{% endblock %}

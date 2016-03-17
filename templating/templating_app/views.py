@@ -87,3 +87,7 @@ def regroup(request):
         {'name': 'Lars Ulrich', 'band': 'Metallica', 'instrument': 'drums'},
     ]
     return render(request, 'templating_app/regroup.html', {"musicians": musicians})
+
+
+def spaceless(request):
+    return render(request, 'templating_app/spaceless.html')
