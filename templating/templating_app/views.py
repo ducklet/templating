@@ -103,3 +103,7 @@ def url_tag(request):
 
 def verbatim(request):
     return render(request, 'templating_app/verbatim.html')
+
+
+def widthratio(request):
+    return render(request, 'templating_app/widthratio.html')
