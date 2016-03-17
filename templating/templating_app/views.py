@@ -99,3 +99,7 @@ def templatetag(request):
 
 def url_tag(request):
     return render(request, 'templating_app/url.html')
+
+
+def verbatim(request):
+    return render(request, 'templating_app/verbatim.html')
