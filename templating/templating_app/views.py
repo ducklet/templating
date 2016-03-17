@@ -72,3 +72,7 @@ def load(request):
 
 def lorem(request):
     return render(request, 'templating_app/lorem.html')
+
+
+def now_tag(request):
+    return render(request, 'templating_app/now.html')
