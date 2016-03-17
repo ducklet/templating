@@ -95,3 +95,7 @@ def spaceless(request):
 
 def templatetag(request):
     return render(request, 'templating_app/templatetag.html')
+
+
+def url_tag(request):
+    return render(request, 'templating_app/url.html')

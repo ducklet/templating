@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^regroup/$', views.regroup, name='regroup'),
     url(r'^spaceless/$', views.spaceless, name='spaceless'),
     url(r'^templatetag/$', views.templatetag, name='templatetag'),
+    url(r'^url/$', views.url_tag, name='url_tag'),
 ]
