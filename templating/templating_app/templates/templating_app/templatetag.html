@@ -1,0 +1,8 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Templatetag{% endblock %}
+
+{% block content %}
+  {% templatetag opencomment %} This is an example of using the 'templatetag' template tag to output
+    syntax characters as simple text. {% templatetag closecomment %}
+{% endblock %}

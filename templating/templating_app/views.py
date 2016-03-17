@@ -91,3 +91,7 @@ def regroup(request):
 
 def spaceless(request):
     return render(request, 'templating_app/spaceless.html')
+
+
+def templatetag(request):
+    return render(request, 'templating_app/templatetag.html')
