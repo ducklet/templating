@@ -76,3 +76,14 @@ def lorem(request):
 
 def now_tag(request):
     return render(request, 'templating_app/now.html')
+
+
+def regroup(request):
+    musicians = [
+        {'name': 'Marty Friedman', 'band': 'Megadeth', 'instrument': 'guitar'},
+        {'name': 'Dave Ellefson', 'band': 'Megadeth', 'instrument': 'bass'},
+        {'name': 'Simon Gallup', 'band': 'The Cure', 'instrument': 'bass'},
+        {'name': 'Neil Pert', 'band': 'Rush', 'instrument': 'drums'},
+        {'name': 'Lars Ulrich', 'band': 'Metallica', 'instrument': 'drums'},
+    ]
+    return render(request, 'templating_app/regroup.html', {"musicians": musicians})

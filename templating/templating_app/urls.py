@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^load/$', views.load, name='load'),
     url(r'^lorem/$', views.lorem, name='lorem'),
     url(r'^now/$', views.now_tag, name='now_tag'),
+    url(r'^regroup/$', views.regroup, name='regroup'),
 ]

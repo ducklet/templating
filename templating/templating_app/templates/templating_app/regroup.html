@@ -1,0 +1,17 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Regroup{% endblock %}
+
+{% block content %}
+  {% regroup musicians by instrument as instrument_list %}
+    <ul>
+      {for instrument in instrument_list %}
+        <li>{{ instrument.grouper }}</li>
+          <ul>
+            {% for item in instrument.list %}
+              <li>{{ item.name }}: {{ item.band }}</li>
+            {% endfor %}
+          </ul>
+      {% endfor %}
+    </ul>
+{% endblock %}
