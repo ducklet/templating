@@ -3,5 +3,9 @@
 {% block title %}Widthratio{% endblock %}
 
 {% block content %}
+  <h1>This example uses widthratio to size the image.</h1>
 
+  {% load staticfiles %}
+    <img src="{% static "templating_app/sneakers.jpeg" %}" alt="Converse Andy Warhol sneaker with black and white soup cans"
+    height="100" width="{% widthratio 10 10 100 %}"/>
 {% endblock %}
