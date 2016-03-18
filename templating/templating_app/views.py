@@ -107,3 +107,7 @@ def verbatim(request):
 
 def widthratio(request):
     return render(request, 'templating_app/widthratio.html')
+
+
+def with_tag(request):
+    return render(request, 'templating_app/with.html')

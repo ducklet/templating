@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^url/$', views.url_tag, name='url_tag'),
     url(r'^verbatim/$', views.verbatim, name='verbatim'),
     url(r'^widthratio/$', views.widthratio, name='widthratio'),
+    url(r'^with/$', views.with_tag, name='with_tag'),
 ]
