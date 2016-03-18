@@ -19,4 +19,12 @@ urlpatterns = [
     url(r'^include/$', views.include, name='include'),
     url(r'^load/$', views.load, name='load'),
     url(r'^lorem/$', views.lorem, name='lorem'),
+    url(r'^now/$', views.now_tag, name='now_tag'),
+    url(r'^regroup/$', views.regroup, name='regroup'),
+    url(r'^spaceless/$', views.spaceless, name='spaceless'),
+    url(r'^templatetag/$', views.templatetag, name='templatetag'),
+    url(r'^url/$', views.url_tag, name='url_tag'),
+    url(r'^verbatim/$', views.verbatim, name='verbatim'),
+    url(r'^widthratio/$', views.widthratio, name='widthratio'),
+    url(r'^with/$', views.with_tag, name='with_tag'),
 ]

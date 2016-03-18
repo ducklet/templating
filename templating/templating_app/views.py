@@ -72,3 +72,42 @@ def load(request):
 
 def lorem(request):
     return render(request, 'templating_app/lorem.html')
+
+
+def now_tag(request):
+    return render(request, 'templating_app/now.html')
+
+
+def regroup(request):
+    musicians = [
+        {'name': 'Marty Friedman', 'band': 'Megadeth', 'instrument': 'guitar'},
+        {'name': 'Dave Ellefson', 'band': 'Megadeth', 'instrument': 'bass'},
+        {'name': 'Simon Gallup', 'band': 'The Cure', 'instrument': 'bass'},
+        {'name': 'Neil Pert', 'band': 'Rush', 'instrument': 'drums'},
+        {'name': 'Lars Ulrich', 'band': 'Metallica', 'instrument': 'drums'},
+    ]
+    return render(request, 'templating_app/regroup.html', {"musicians": musicians})
+
+
+def spaceless(request):
+    return render(request, 'templating_app/spaceless.html')
+
+
+def templatetag(request):
+    return render(request, 'templating_app/templatetag.html')
+
+
+def url_tag(request):
+    return render(request, 'templating_app/url.html')
+
+
+def verbatim(request):
+    return render(request, 'templating_app/verbatim.html')
+
+
+def widthratio(request):
+    return render(request, 'templating_app/widthratio.html')
+
+
+def with_tag(request):
+    return render(request, 'templating_app/with.html')

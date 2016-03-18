@@ -1,0 +1,9 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}Verbatim{% endblock %}
+
+{% block content %}
+  {% verbatim exampleblock %}
+    <h1>Using the {% verbatim %}{% endverbatim %} template tags so that the tags in this sentence aren't rendered.</h1>
+  {% endverbatim exampleblock %}
+{% endblock %}

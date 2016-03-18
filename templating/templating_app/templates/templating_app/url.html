@@ -1,0 +1,7 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}URL{% endblock %}
+
+{% block content %}
+  <h1>Using the URL tag to create <a href="{% url 'index' %}">this link to the homepage</a>.</h1>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'templating_app/index.html' %}
+
+{% block title %}With{% endblock %}
+
+{% block content %}
+  {% with dog=0 cat=1 %}
+    I have {{ dog }} dogs and {{ cat }} cat.
+  {% endwith %}
+{% endblock %}
