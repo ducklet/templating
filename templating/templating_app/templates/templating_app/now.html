@@ -3,5 +3,7 @@
 {% block title %}Now{% endblock %}
 
 {% block content %}
-  It is {% now "DATE_FORMAT" %}.
+  <p>It is {% now "DATE_FORMAT" %}.</p>
+  <p>It is the {% now "jS" %} of the month.</p>
+  <p>It is {% now "SHORT_DATE_FORMAT" %}.</p>
 {% endblock %}
