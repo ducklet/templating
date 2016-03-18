@@ -111,3 +111,7 @@ def widthratio(request):
 
 def with_tag(request):
     return render(request, 'templating_app/with.html')
+
+
+def filters(request):
+    return render(request, 'templating_app/filters.html')
