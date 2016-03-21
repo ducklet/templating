@@ -8,6 +8,9 @@
   <h2>Add</h2>
   {{ 6|add:"6" }}
 
+  <h2>Addslashes</h2>
+  {{ "I'm using the addslashes filter to add the slash before the quote."|addslashes }}
+
   <h2>Date</h2>
   <p>It is {% now "l\, F jS" %}.</p>
   <a href="https://docs.djangoproject.com/en/1.9/ref/templates/builtins/#date">Date format strings reference</a>
