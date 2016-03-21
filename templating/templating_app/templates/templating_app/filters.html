@@ -39,4 +39,7 @@
   {% for person in people|dictsortreversed:"age" %}
     <p>{{ person.name }} is {{ person.age }} years old.</p>
   {% endfor %}
+
+  <h2>Divisibleby</h2>
+  <p>7 divisibleby 2 returns "{{ 7|divisibleby:"2" }}".</p>
 {% endblock %}
