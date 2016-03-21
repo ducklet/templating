@@ -114,4 +114,15 @@ def with_tag(request):
 
 
 def filters(request):
-    return render(request, 'templating_app/filters.html')
+    none_var = None
+    people = [
+        {'name': 'Alissa', 'age': 29},
+        {'name': 'Eddie', 'age': 36},
+        {'name': 'Sebastian', 'age': 17},
+    ]
+    escape_ex = "<p>This HTML is escaped.</p>"
+    fake_js = "jQuery('#database').val(db);"
+    sentence = ['This sentence is the first item in a list.', 'Second', "Third"]
+    return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
+                                                           "escape_ex": escape_ex, "fake_js": fake_js,
+                                                           "sentence": sentence})
