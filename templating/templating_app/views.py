@@ -114,4 +114,5 @@ def with_tag(request):
 
 
 def filters(request):
-    return render(request, 'templating_app/filters.html')
+    none_var = None
+    return render(request, 'templating_app/filters.html', {"none_var": none_var})
