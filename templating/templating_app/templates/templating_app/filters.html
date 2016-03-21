@@ -34,4 +34,9 @@
   {% for person in people|dictsort:"age" %}
     <p>{{ person.name }} is {{ person.age }} years old.</p>
   {% endfor %}
+
+  <h2>Dictsortreversed</h2>
+  {% for person in people|dictsortreversed:"age" %}
+    <p>{{ person.name }} is {{ person.age }} years old.</p>
+  {% endfor %}
 {% endblock %}
