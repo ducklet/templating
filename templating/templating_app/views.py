@@ -121,5 +121,6 @@ def filters(request):
         {'name': 'Sebastian', 'age': 17},
     ]
     escape_ex = "<p>This HTML is escaped.</p>"
+    fake_js = "jQuery('#database').val(db);"
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
-                                                           "escape_ex": escape_ex})
+                                                           "escape_ex": escape_ex, "fake_js": fake_js})
