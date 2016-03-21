@@ -115,4 +115,9 @@ def with_tag(request):
 
 def filters(request):
     none_var = None
-    return render(request, 'templating_app/filters.html', {"none_var": none_var})
+    people = [
+        {'name': 'Alissa', 'age': 29},
+        {'name': 'Eddie', 'age': 36},
+        {'name': 'Sebastian', 'age': 17},
+    ]
+    return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people})
