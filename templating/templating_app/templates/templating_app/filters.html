@@ -17,6 +17,9 @@
   <h2>Center</h2>
   "{{ "I'm using the center filter to center this text."|center:"50" }}"
 
+  <h2>Cut</h2>
+  {{ "I'm using the cut filter to remove all instances of the letter before 'n' from this sentence!"|cut:"m" }}
+
   <h2>Date</h2>
   <p>It is {% now "l\, F jS" %}.</p>
   <a href="https://docs.djangoproject.com/en/1.9/ref/templates/builtins/#date">Date format strings reference</a>
