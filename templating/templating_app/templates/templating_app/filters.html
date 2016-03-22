@@ -54,4 +54,10 @@
 
   <h2>First</h2>
   {{ sentence|first }}
+
+  <h2>Floatformat</h2>
+  <p>The following numbers are filtered using floatformat:2 to round to 2 decimal places:</p>
+  {% for number in numbers %}
+    <p>{{ number|floatformat:2 }}</p>
+  {% endfor %}
 {% endblock %}

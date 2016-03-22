@@ -123,6 +123,7 @@ def filters(request):
     escape_ex = "<p>This HTML is escaped.</p>"
     fake_js = "jQuery('#database').val(db);"
     sentence = ['This sentence is the first item in a list.', 'Second', "Third"]
+    numbers = [123.456, 234.567, 345.678]
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
                                                            "escape_ex": escape_ex, "fake_js": fake_js,
-                                                           "sentence": sentence})
+                                                           "sentence": sentence, "numbers": numbers})
