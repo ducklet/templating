@@ -61,6 +61,11 @@
     <p>{{ number|floatformat:2 }}</p>
   {% endfor %}
 
+  <h2>Force_escape</h2>
+  {% autoescape off %}
+    {{ awesom_o|linebreaks|force_escape }}
+  {% endautoescape %}
+
   <h2>Linebreaks</h2>
   {{ awesom_o|linebreaks }}
 {% endblock %}
