@@ -54,4 +54,24 @@
 
   <h2>First</h2>
   {{ sentence|first }}
+
+  <h2>Floatformat</h2>
+  <p>The following numbers are filtered using floatformat:2 to round to 2 decimal places:</p>
+  {% for number in numbers %}
+    <p>{{ number|floatformat:2 }}</p>
+  {% endfor %}
+
+  <h2>Force_escape</h2>
+  {% autoescape off %}
+    {{ awesom_o|linebreaks|force_escape }}
+  {% endautoescape %}
+
+  <h2>Get_digit</h2>
+  {{ 6661|get_digit:"2" }}
+
+  <h2>Iriencode</h2>
+  {{ fake_string|iriencode }}
+
+  <h2>Linebreaks</h2>
+  {{ awesom_o|linebreaks }}
 {% endblock %}
