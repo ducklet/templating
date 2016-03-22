@@ -125,7 +125,8 @@ def filters(request):
     sentence = ['This sentence is the first item in a list.', 'Second', "Third"]
     numbers = [123.456, 234.567, 345.678]
     awesom_o = "Alissa\nrocks!"
+    fake_string = "?Alissa=1&rocks=2"
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
                                                            "escape_ex": escape_ex, "fake_js": fake_js,
                                                            "sentence": sentence, "numbers": numbers,
-                                                           "awesom_o": awesom_o})
+                                                           "awesom_o": awesom_o, "fake_string": fake_string})
