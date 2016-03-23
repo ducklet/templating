@@ -72,6 +72,21 @@
   <h2>Iriencode</h2>
   {{ fake_string|iriencode }}
 
+  <h2>Join</h2>
+  {{ join_list|join:" !! " }}
+
+  <h2>Last</h2>
+  {{ last_list|last }}
+
+  <h2>Length</h2>
+  <p>The word "snowmobile" has {{ "snowmobile"|length }} letters.</p>
+
+  <h2>Length_is</h2>
+  <p>In this example, length_is returns "{{ "Batman"|length_is:"6" }}" because the value "Batman" does have 6 letters.
+
   <h2>Linebreaks</h2>
   {{ awesom_o|linebreaks }}
+
+  <h2>Linebreaksbr</h2>
+  {{ awesom_o|linebreaksbr }}
 {% endblock %}
