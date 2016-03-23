@@ -132,9 +132,10 @@ def filters(request):
                    and
                    linebreaksbr
                    filters!"""
+    cactus_count = 3
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
                                                            "escape_ex": escape_ex, "fake_js": fake_js,
                                                            "sentence": sentence, "numbers": numbers,
                                                            "awesom_o": awesom_o, "fake_string": fake_string,
                                                            "join_list": join_list, "last_list": last_list,
-                                                           "line_numbers": line_numbers})
+                                                           "line_numbers": line_numbers, "cactus_count": cactus_count})

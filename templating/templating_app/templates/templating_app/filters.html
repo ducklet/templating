@@ -104,4 +104,7 @@
 
   <h2>Phone2numeric</h2>
   <p>Using the phone2numeric filter to convert 1-800-54-GIANT to {{ "1-800-54G-IANT"|phone2numeric }}.</p>
+
+  <h2>Pluralize</h2>
+  <p>I have {{ cactus_count }} cact{{ cactus_count|pluralize:"us,i" }}.</p>
 {% endblock %}
