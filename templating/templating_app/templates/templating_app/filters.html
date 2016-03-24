@@ -119,4 +119,7 @@
 
   <h2>Safe</h2>
   {{ escape_ex|safe|escape }}
+
+  <h2>Safeseq</h2>
+  {{ escape_ex|safeseq|join:"! " }}
 {% endblock %}
