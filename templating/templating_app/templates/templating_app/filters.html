@@ -122,4 +122,8 @@
 
   <h2>Safeseq</h2>
   {{ escape_ex|safeseq|join:"! " }}
+
+  <h2>Slice</h2>
+  <p>The 3rd value in the following list is not displayed below because the slice filter is set to 2:</p>
+  {{ sentence|slice:":2" }}
 {% endblock %}
