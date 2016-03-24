@@ -138,6 +138,6 @@
   {{ "<span>The html elements in this value are not displayed because of the striptags filter.</span> "|striptags }}
 
   <h2>Time</h2>
-  {{ |time:"H:i" }}
+  {{ now|time:"TIME_FORMAT" }}
 
 {% endblock %}
