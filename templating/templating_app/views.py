@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import datetime
 
 
 def index(request):
@@ -128,8 +129,16 @@ def filters(request):
     fake_string = "?Alissa=1&rocks=2"
     join_list = ['Using', 'the', 'join', 'filter.']
     last_list = ['First', 'Last item in the list']
+    line_numbers = """Linenumbers
+                   and
+                   linebreaksbr
+                   filters!"""
+    cactus_count = 3
+    now = datetime.datetime.now()
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
                                                            "escape_ex": escape_ex, "fake_js": fake_js,
                                                            "sentence": sentence, "numbers": numbers,
                                                            "awesom_o": awesom_o, "fake_string": fake_string,
-                                                           "join_list": join_list, "last_list": last_list})
+                                                           "join_list": join_list, "last_list": last_list,
+                                                           "line_numbers": line_numbers, "cactus_count": cactus_count,
+                                                           "now": now})

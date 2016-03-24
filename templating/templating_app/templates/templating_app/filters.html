@@ -79,7 +79,7 @@
   {{ last_list|last }}
 
   <h2>Length</h2>
-  <p>The word "snowmobile" has {{ "snowmobile"|length }} letters.</p>
+  <p>The word "snowmobile" does have {{ "snowmobile"|length }} letters.</p>
 
   <h2>Length_is</h2>
   <p>In this example, length_is returns "{{ "Batman"|length_is:"6" }}" because the value "Batman" does have 6 letters.
@@ -89,4 +89,55 @@
 
   <h2>Linebreaksbr</h2>
   {{ awesom_o|linebreaksbr }}
+
+  <h2>Linenumbers</h2>
+  {{ line_numbers|linenumbers|linebreaksbr }}
+
+  <h2>Ljust</h2>
+  <pre>"{{ "I'm using the ljust filter to left-align this text in given width '80'."|ljust:"80" }}"</pre>
+
+  <h2>Lower</h2>
+  {{ "I'm Using The Lower Filter So This text displays as all lowercase, even though the value contains uppercase letters."|lower }}
+
+  <h2>Make_list</h2>
+  {{ "Using the make_list filter."|make_list }}
+
+  <h2>Phone2numeric</h2>
+  <p>Using the phone2numeric filter to convert 1-800-54-GIANT to {{ "1-800-54G-IANT"|phone2numeric }}.</p>
+
+  <h2>Pluralize</h2>
+  <p>I have {{ cactus_count }} cact{{ cactus_count|pluralize:"us,i" }}.</p>
+
+  <h2>Pprint</h2>
+  {{ people|pprint }}
+
+  <h2>Random</h2>
+  {{ sentence|random }}
+
+  <h2>Rjust</h2>
+  <pre>"{{ "I'm using the rjust filter to right-align this text in given width '80'."|rjust:"80" }}"</pre>
+
+  <h2>Safe</h2>
+  {{ escape_ex|safe|escape }}
+
+  <h2>Safeseq</h2>
+  {{ escape_ex|safeseq|join:"! " }}
+
+  <h2>Slice</h2>
+  <p>The 3rd value in the following list is not displayed below because the slice filter is set to 2:</p>
+  {{ sentence|slice:":2" }}
+
+  <h2>Slugify</h2>
+  {{ "The slugify filter is converting this text to lowercase with hyphens instead of spaces."|slugify }}
+
+  <h2>Stringformat</h2>
+  <p>{{ 666|stringformat:"f" }}</p>
+  <a href="https://docs.python.org/2/library/stdtypes.html#string-formatting-operations">Python string formatting operations</a>
+
+  <h2>Striptags</h2>
+  {{ "<span>The html elements in this value are not displayed because of the striptags filter.</span> "|striptags }}
+
+  <h2>Time</h2>
+  {{ now|time:"TIME_FORMAT" }}
+
 {% endblock %}
