@@ -133,4 +133,11 @@
   <h2>Stringformat</h2>
   <p>{{ 666|stringformat:"f" }}</p>
   <a href="https://docs.python.org/2/library/stdtypes.html#string-formatting-operations">Python string formatting operations</a>
+
+  <h2>Striptags</h2>
+  {{ "<span>The html elements in this value are not displayed because of the striptags filter.</span> "|striptags }}
+
+  <h2>Time</h2>
+  {{ |time:"H:i" }}
+
 {% endblock %}
