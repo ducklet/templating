@@ -126,4 +126,7 @@
   <h2>Slice</h2>
   <p>The 3rd value in the following list is not displayed below because the slice filter is set to 2:</p>
   {{ sentence|slice:":2" }}
+
+  <h2>Slugify</h2>
+  {{ "The slugify filter is converting this text to lowercase with hyphens instead of spaces."|slugify }}
 {% endblock %}
