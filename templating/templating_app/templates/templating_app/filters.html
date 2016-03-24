@@ -116,4 +116,7 @@
 
   <h2>Rjust</h2>
   <pre>"{{ "I'm using the rjust filter to right-align this text in given width '80'."|rjust:"80" }}"</pre>
+
+  <h2>Safe</h2>
+  {{ escape_ex|safe|escape }}
 {% endblock %}
