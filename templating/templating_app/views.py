@@ -135,7 +135,7 @@ def filters(request):
                    filters!"""
     cactus_count = 3
     now = datetime.datetime.now()
-    birth_date =
+    birth_date = date(1981, 4, 20)
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
                                                            "escape_ex": escape_ex, "fake_js": fake_js,
                                                            "sentence": sentence, "numbers": numbers,
