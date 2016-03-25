@@ -154,4 +154,7 @@
 
   <h2>Truncatechars_html</h2>
   {{ trunc_html|truncatechars_html:70 }}
+
+  <h2>Truncatewords</h2>
+  {{ "As you can't see the truncatewords filter is truncating this string after 7 words."|truncatewords:8 }}
 {% endblock %}
