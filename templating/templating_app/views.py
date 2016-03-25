@@ -137,6 +137,7 @@ def filters(request):
     now = datetime.datetime.now()
     birth_date = datetime.date(1981, 4, 20)
     fotc = datetime.date(2016, 6, 13)
+    trunc_html = "<p>The truncatechars_html filter is keeping all HTML tags but still truncating this string.</p>"
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
                                                            "escape_ex": escape_ex, "fake_js": fake_js,
                                                            "sentence": sentence, "numbers": numbers,
@@ -144,4 +145,4 @@ def filters(request):
                                                            "join_list": join_list, "last_list": last_list,
                                                            "line_numbers": line_numbers, "cactus_count": cactus_count,
                                                            "now": now, "birth_date": birth_date,
-                                                           "fotc": fotc})
+                                                           "fotc": fotc, "trunc_html": trunc_html})
