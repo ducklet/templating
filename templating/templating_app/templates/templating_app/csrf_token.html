@@ -3,4 +3,11 @@
 {% block title %}CSRF Token{% endblock %}
 
 {% block content %}
+  <form action="" method="post">
+    {% csrf_token %}
+      <label for="secure_info">Secure info</label>
+      <input type="text" id="secure_info"></input></br>
+      <label for="more_secure_info">More secure info</label>
+      <input type="text" id="more_secure_info"></input>
+  </form>
 {% endblock %}

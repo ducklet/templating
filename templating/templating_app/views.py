@@ -34,10 +34,6 @@ def extends(request):
     return render(request, 'templating_app/extends.html')
 
 
-def filter(request):
-    return render(request, 'templating_app/filter.html')
-
-
 def firstof(request):
     the_other_thing = "The firstof tag is outputting this text, the value of the first non-empty variable I gave it."
     return render(request, 'templating_app/firstof.html', {"the_other_thing": the_other_thing})
@@ -135,10 +131,17 @@ def filters(request):
                    filters!"""
     cactus_count = 3
     now = datetime.datetime.now()
+    birth_date = datetime.date(1981, 4, 20)
+    fotc = datetime.date(2016, 6, 13)
+    trunc_html = "<p>The truncatechars_html filter is keeping all HTML tags but still truncating this string.</p>"
+    friends = ['Friends', ['Panchenkos', ['Anastasia', 'Alex'], 'Walters', ['Ellen', 'David']]]
+    word_wrap = "I'm using the wordwrap filter to set a line length of 10 characters, beyond which text wraps."
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
                                                            "escape_ex": escape_ex, "fake_js": fake_js,
                                                            "sentence": sentence, "numbers": numbers,
                                                            "awesom_o": awesom_o, "fake_string": fake_string,
                                                            "join_list": join_list, "last_list": last_list,
                                                            "line_numbers": line_numbers, "cactus_count": cactus_count,
-                                                           "now": now})
+                                                           "now": now, "birth_date": birth_date,
+                                                           "fotc": fotc, "trunc_html": trunc_html, "friends": friends,
+                                                           "word_wrap": word_wrap})
