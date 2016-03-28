@@ -139,6 +139,7 @@ def filters(request):
     fotc = datetime.date(2016, 6, 13)
     trunc_html = "<p>The truncatechars_html filter is keeping all HTML tags but still truncating this string.</p>"
     friends = ['Friends', ['Panchenkos', ['Anastasia', 'Alex'], 'Walters', ['Ellen', 'David']]]
+    word_wrap = "I'm using the wordwrap filter to set a line length of 10 characters, beyond which text wraps."
     return render(request, 'templating_app/filters.html', {"none_var": none_var, "people": people,
                                                            "escape_ex": escape_ex, "fake_js": fake_js,
                                                            "sentence": sentence, "numbers": numbers,
@@ -146,4 +147,5 @@ def filters(request):
                                                            "join_list": join_list, "last_list": last_list,
                                                            "line_numbers": line_numbers, "cactus_count": cactus_count,
                                                            "now": now, "birth_date": birth_date,
-                                                           "fotc": fotc, "trunc_html": trunc_html, "friends": friends})
+                                                           "fotc": fotc, "trunc_html": trunc_html, "friends": friends,
+                                                           "word_wrap": word_wrap})
