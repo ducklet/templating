@@ -34,10 +34,6 @@ def extends(request):
     return render(request, 'templating_app/extends.html')
 
 
-def filter(request):
-    return render(request, 'templating_app/filter.html')
-
-
 def firstof(request):
     the_other_thing = "The firstof tag is outputting this text, the value of the first non-empty variable I gave it."
     return render(request, 'templating_app/firstof.html', {"the_other_thing": the_other_thing})
