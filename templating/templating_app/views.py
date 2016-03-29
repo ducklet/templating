@@ -17,8 +17,14 @@ def comment(request):
     return render(request, 'templating_app/comment.html')
 
 
-def csrf_token(request):
-    return render(request, 'templating_app/csrf_token.html')
+def my_csrf_token(request):
+#    print(request.POST['my_post'])
+#    print(request.POST['my_post_2'])
+    print(request.GET.get('my_no_get', 'bla'))
+    print(request.GET.get('my_no_get_2', 'blabla'))
+    if request.method == 'POST':
+        post_variable = request.POST['my_post']
+    return render(request, 'templating_app/csrf_token.html', {"post_variable": post_variable})
 
 
 def cycle(request):

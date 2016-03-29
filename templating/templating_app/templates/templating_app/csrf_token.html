@@ -6,8 +6,27 @@
   <form action="" method="post">
     {% csrf_token %}
       <label for="secure_info">Secure info</label>
-      <input type="text" id="secure_info"></input></br>
+      <input type="text" id="secure_info" name="my_post"></input></br>
       <label for="more_secure_info">More secure info</label>
-      <input type="text" id="more_secure_info"></input>
+      <input type="text" id="more_secure_info" name="my_post_2"></input>
+      <button type="submit">Submit secure info</button>
   </form>
+
+  <form action="" method="post">
+    <label for="secure_info2">Secure info</label>
+    <input type="text" id="secure_info2"></input></br>
+    <label for="more_secure_info2">More secure info</label>
+    <input type="text" id="more_secure_info2"></input>
+    <button type="submit">Submit secure info</button>
+  </form>
+
+  <form action="" method="get">
+    <label for="secure_info3">Secure info</label>
+    <input type="text" id="secure_info3" name="my_no_get"></input></br>
+    <label for="more_secure_info3">More secure info</label>
+    <input type="text" id="more_secure_info3" name="my_no_get_2"></input>
+    <button type="submit">Submit secure info</button>
+  </form>
+
+<p>{{ post_variable }}</p>
 {% endblock %}
