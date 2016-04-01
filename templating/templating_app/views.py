@@ -18,13 +18,16 @@ def comment(request):
 
 
 def my_csrf_token(request):
-#    print(request.POST['my_post'])
-#    print(request.POST['my_post_2'])
-    print(request.GET.get('my_no_get', 'bla'))
-    print(request.GET.get('my_no_get_2', 'blabla'))
-    if request.method == 'POST':
-        post_variable = request.POST['my_post']
-    return render(request, 'templating_app/csrf_token.html', {"post_variable": post_variable})
+    post_variable = request.POST.get('my_post')
+    post_variable2 = request.POST.get('my_post_2')
+    get_variable = request.GET.get('my_no_get')
+    get_variable2 = request.GET.get('my_no_get_2')
+    return render(request, 'templating_app/csrf_token.html', {
+        "post_variable": post_variable,
+        "post_variable2": post_variable2,
+        "get_variable": get_variable,
+        "get_variable2": get_variable2
+    })
 
 
 def cycle(request):

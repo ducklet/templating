@@ -3,6 +3,10 @@
 {% block title %}CSRF Token{% endblock %}
 
 {% block content %}
+
+  <p>The csrf_token template tag provides protection against attacks;
+    read more <a href="https://docs.djangoproject.com/en/1.8/ref/csrf/#using-csrf">here</a>.</p>
+
   <form action="" method="post">
     {% csrf_token %}
       <label for="secure_info">Secure info</label>
@@ -28,5 +32,13 @@
     <button type="submit">Submit secure info</button>
   </form>
 
-<p>{{ post_variable }}</p>
+  {% if post_variable or post_variable2 %}
+    <p>Your post form's first input was "{{ post_variable }}"!</p>
+    <p>Your post form's second input was "{{ post_variable2 }}"!</p>
+  {% endif %}
+
+  {% if get_variable or get_variable2 %}
+    <p>Your get form's first input was "{{ get_variable }}"!</p>
+    <p>Your get form's second input was "{{ get_variable2 }}"!</p>
+  {% endif %}
 {% endblock %}
